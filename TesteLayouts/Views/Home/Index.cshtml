@@ -1,0 +1,36 @@
+﻿@{
+	ViewData["Title"] = "Home Page";
+}
+<head>
+	<link href="~/css/home/home.css" rel="stylesheet" />
+</head>
+<body class="container__home">
+	    <main class="container__login-home">
+        <img src="~/imagens/foto_home.jpg" class="container__login-imagem" alt="Imagem de boas-vindas" />
+        
+        <form class="form__login" action="/login" method="POST">
+            <h2>Login</h2>
+
+            <div class="form__group">
+                <label for="login">Login</label>
+                <input type="text" id="login" name="login" required aria-label="Digite seu login">
+            </div>
+
+            <div class="form__group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required aria-label="Digite sua senha">
+            </div>
+
+            <div class="form__links">
+                <a href="/esqueceu-senha" class="link__esqueceu-senha">Esqueceu a senha?</a>
+            </div>
+
+            <button type="submit" class="btn__entrar">Entrar</button>
+
+            <div class="form__links">
+                <a href="/primeiro-acesso" class="link__primeiro-acesso">Primeiro acesso</a>
+            </div>
+        </form>
+    </main>
+</body>
+

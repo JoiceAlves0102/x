@@ -1,0 +1,139 @@
+﻿.container__login-home {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    height: 94vh;
+    background-color: var(--azul-navbar--footer);
+    position: relative;
+    top: 6vh;
+}
+img.container__login-imagem {
+    width: 100%;
+    height: 91vh;
+}
+
+input {
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 4px;
+    width: 33vw;
+    height: 4vh;
+}
+button.btn__entrar {
+    background-color: #10c9ba;
+    border: none;
+    width: 32%;
+    border-radius: 5px;
+    padding: 1%;
+}
+form.form__login {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    justify-content: center;
+    color: #fd7744;
+    font-weight: 500;
+}
+/*Telas de celular */
+
+
+@media screen and (max-width: 768px) {
+    input {
+        background-color: #d9d9d9;
+        border: none;
+        border-radius: 4px;
+        width: 50vw;
+        height: 4vh;
+    }
+    nav.navbar.navbar-expand-sm.navbar-toggleable-sm {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    img.container__login-imagem {
+        display: none;
+    }
+
+    .container__login-home {
+        background-image: url(../../Imagens/imagem_login_mobile.jpg);
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        top:0;
+    }
+
+    .form__login {
+        height: 86vh;
+        width: 87vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+        top: 0%;
+        align-items: center;
+        background-color: #0b24478c;
+        align-items: center;
+        padding-top: 4%;
+        border-radius: 15px;
+    }
+
+        .form__login h2, label {
+            color: #fd7744;
+            font-weight: 700;
+        }
+
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .form__login input, .form__login button {
+        width: 40vw;
+        margin-bottom: 15px;
+    }
+    .container__login-home {
+        background-image: url(../../Imagens/imagem_login_mobile.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+        flex-direction: column;
+        position: relative;
+        top: 8vh;
+        overflow: hidden;
+    }
+
+    img.container__login-imagem {
+        display: none;
+        width: 100%;
+        max-width: 500px; /* Limita a largura da imagem */
+        height: auto;
+        object-fit: cover; /* Preserva a proporção da imagem */
+    }
+
+    .form__login {
+        max-width: 603px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+        background-color: rgb(255 255 255 / 66%);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    }
+    form.form__login {
+        height: 80%;
+     
+    }
+
+}

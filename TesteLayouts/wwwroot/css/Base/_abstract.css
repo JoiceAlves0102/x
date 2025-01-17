@@ -1,0 +1,32 @@
+﻿:root {
+    --azul-navbar--footer: #0b2447;
+    --cor-texto-navbar:#ffffff;
+}
+
+
+/*Navbar*/
+nav.navbar.navbar-expand-sm.navbar-toggleable-sm {
+    background-color: var(--azul-navbar--footer);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Altura da navbar */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; 
+
+}
+
+
+/*------------------*/
+
+
+    /*Footer*/
+    footer {
+    background-color: var(--azul-navbar--footer);
+    position:fixed;
+}
+/*----------------------------------*/
